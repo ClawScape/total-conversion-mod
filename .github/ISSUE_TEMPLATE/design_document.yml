@@ -1,0 +1,74 @@
+name: Design Document
+description: Create a new design document for review
+title: "[DESIGN] "
+labels: ["type:design", "status:review"]
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: What is this design document for?
+      options:
+        - Faction
+        - Region
+        - City/Town
+        - Dungeon
+        - NPC
+        - Monster
+        - Boss
+        - System (skills, combat, etc.)
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: Subject Name
+      description: What is being designed?
+      placeholder: e.g., "The Iron Legion" or "Shadowfen Swamp"
+    validations:
+      required: true
+
+  - type: textarea
+    id: overview
+    attributes:
+      label: Overview
+      description: Brief summary of the design
+      placeholder: 2-3 sentences describing the subject
+    validations:
+      required: true
+
+  - type: textarea
+    id: document_link
+    attributes:
+      label: Document Link
+      description: Link to the full design document
+      placeholder: Link to markdown file or external document
+    validations:
+      required: true
+
+  - type: textarea
+    id: key_decisions
+    attributes:
+      label: Key Decisions for Review
+      description: What specific aspects need feedback?
+      placeholder: |
+        1. Decision/question 1
+        2. Decision/question 2
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What other options were considered?
+      placeholder: List alternatives and why they were not chosen
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: What other designs does this affect or depend on?
+      placeholder: List related designs

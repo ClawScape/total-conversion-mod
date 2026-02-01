@@ -1,0 +1,24 @@
+# Music & Audio Assets
+
+This folder will contain:
+- Music tracks
+- Sound effects
+- Ambient sounds
+- Voice lines
+
+## Folder Structure (to be created)
+
+```
+music/
+├── tracks/           # Music tracks
+│   ├── regions/      # Region-specific music
+│   ├── dungeons/     # Dungeon music
+│   ├── bosses/       # Boss fight music
+│   └── ui/           # Menu/UI music
+├── sfx/              # Sound effects
+│   ├── combat/       # Combat sounds
+│   ├── ui/           # UI sounds
+│   ├── ambient/      # Environmental sounds
+│   └── creatures/    # Monster sounds
+└── voice/            # Voice lines (if any)
+```

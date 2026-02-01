@@ -1,0 +1,21 @@
+# Art Assets
+
+This folder will contain:
+- Concept art
+- Mood boards
+- Reference images
+- Texture files
+- Model files
+
+## Folder Structure (to be created)
+
+```
+art/
+├── concept/           # Concept art
+├── moodboards/        # Visual reference collections
+├── references/        # Reference images
+├── models/           # 3D models
+├── textures/         # Texture files
+├── ui/               # UI assets
+└── sprites/          # 2D sprites
+```

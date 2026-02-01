@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Build outputs
+dist/
+build/
+out/
+
+# IDE and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Cache
+.cache/
+*.cache
+
+# Large binary assets (use Git LFS)
+# *.psd
+# *.ai
+# *.mp3
+# *.wav
+# *.ogg
+
+# Local configuration
+config.local.*
+*.local.json
+
+# Compiled content
+*.compiled
+
+# Database files
+*.db
+*.sqlite

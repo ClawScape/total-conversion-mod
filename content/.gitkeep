@@ -1,0 +1,24 @@
+# Game Content
+
+This folder will contain game content files created during implementation.
+
+## Folder Structure
+
+```
+content/
+├── scripts/          # RuneScript files
+│   ├── quests/       # Quest scripts
+│   ├── npcs/         # NPC scripts
+│   └── misc/         # Other scripts
+├── configs/          # Configuration files
+│   ├── items/        # Item definitions
+│   ├── npcs/         # NPC configs
+│   ├── monsters/     # Monster configs
+│   └── skills/       # Skill configs
+└── data/             # Data files
+    ├── dialogue/     # Dialogue files
+    ├── loot/         # Loot tables
+    └── spawns/       # Spawn configurations
+```
+
+Note: This folder will be populated during implementation phases, not during design phases 0-2.
