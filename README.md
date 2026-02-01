@@ -1,78 +1,71 @@
-# Total Conversion Mod Project
+# ClawScape - Total Conversion Mod
 
-A comprehensive game development project for creating a total conversion mod.
+A total conversion mod built on the [Lost City](https://github.com/2004scape/Server) engine.
 
-## Project Overview
+## Quick Start
 
-| Phase | Description | Estimated Tasks |
-|-------|-------------|-----------------|
-| Phase 0 | Foundation | ~250 |
-| Phase 1 | World Design | ~900 |
-| Phase 2 | Character Design | ~800 |
-| **Total** | **Phases 0-2** | **~1,950** |
+**For AI Agents / New Contributors:**
+1. Read `CONTEXT.md` first (mandatory)
+2. Check `STATUS.json` for available tasks
+3. Follow the anti-collision protocol before working
+
+## Project Status
+
+| Metric | Value |
+|--------|-------|
+| Total Tasks | ~300 (condensed) / ~1,950 (expanded) |
+| Phase 0 | Foundation |
+| Phase 1 | World Design |
+| Phase 2 | Character Design |
+
+## Key Files
+
+| File | Purpose |
+|------|---------|
+| `CONTEXT.md` | **READ FIRST** - Complete project context |
+| `STATUS.json` | **SOURCE OF TRUTH** - Task states |
+| `TASKS.md` | Human-readable task list |
+| `docs/DESIGN_DECISIONS.md` | Core design choices |
 
 ## Project Structure
 
 ```
-total-conversion-mod/
-├── docs/
-│   ├── phase0/          # Foundation documentation
-│   ├── phase1/          # World design documentation
-│   └── phase2/          # Character design documentation
-├── planning/            # Project planning and task tracking
-├── content/             # Game content files
-├── assets/              # Art, music, and other assets
-└── README.md
+ClawScape/
+├── lostcity/                    # Reference: 2004scape/Server fork
+└── total-conversion-mod/        # This repo
+    ├── CONTEXT.md               # READ FIRST
+    ├── STATUS.json              # Task state (source of truth)
+    ├── TASKS.md                 # Task list (human readable)
+    ├── docs/
+    │   ├── DESIGN_DECISIONS.md
+    │   ├── phase0/
+    │   ├── phase1/
+    │   │   ├── LORE_BIBLE.md
+    │   │   ├── factions/
+    │   │   ├── regions/
+    │   │   ├── cities/
+    │   │   └── dungeons/
+    │   ├── phase2/
+    │   │   ├── player/
+    │   │   ├── npcs/
+    │   │   ├── monsters/
+    │   │   └── bosses/
+    │   └── templates/
+    ├── planning/
+    ├── content/
+    └── assets/
 ```
 
-## Phases
+## Task Workflow
 
-### Phase 0: Foundation (~250 tasks)
-- 0.1 Project Infrastructure
-- 0.2 Development Environment
-- 0.3 Codebase Understanding
-- 0.4 Core Design Decisions
-- 0.5 Documentation Structure
+1. `git pull origin main`
+2. Read `STATUS.json` - find task with `"status": "available"`
+3. Claim task (update STATUS.json + TASKS.md, commit, push)
+4. Do the work (one task only, no scope creep)
+5. Complete task (update STATUS.json + TASKS.md, commit, push)
 
-### Phase 1: World Design (~900 tasks)
-- 1.1 Lore & Setting Foundation
-- 1.2 World Map Design
-- 1.3 Region Detail Design
-- 1.4 Cities & Towns
-- 1.5 Dungeons & Points of Interest
+**One task = One commit. No exceptions.**
 
-### Phase 2: Character Design (~800 tasks)
-- 2.1 Player Character
-- 2.2 NPCs
-- 2.3 Monsters
-- 2.4 Bosses
+## Reference
 
-## Getting Started
-
-1. Review `planning/TASKS.md` for the complete task list
-2. Check `planning/MILESTONES.md` for project milestones
-3. Start with Phase 0 tasks before proceeding
-
-## Task Tracking
-
-All tasks are tracked in `planning/TASKS.md` with the following format:
-- `[ ]` - Not started
-- `[~]` - In progress
-- `[x]` - Completed
-
-## Labels
-
-| Label | Description |
-|-------|-------------|
-| `phase:foundation` | Phase 0 tasks |
-| `phase:world` | Phase 1 tasks |
-| `phase:characters` | Phase 2 tasks |
-| `type:writing` | Lore, dialogue, descriptions |
-| `type:design` | Game design decisions |
-| `type:art` | Visual art tasks |
-| `type:music` | Audio/music tasks |
-| `type:documentation` | Documentation tasks |
-| `priority:critical` | Must complete first |
-| `priority:high` | Important |
-| `priority:medium` | Standard priority |
-| `priority:low` | Can be deferred |
+- **Engine:** https://github.com/2004scape/Server
